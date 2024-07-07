@@ -553,7 +553,7 @@ p {
 @media (max-width : 415px)  {
   * {
     /* max-width: 360px; */
-    overflow: clip;
+    overflow: scroll;
   }
 
   .logo, .imagen-frente {
