@@ -226,7 +226,7 @@ background-color: #00142D; */
 }
 
 body {
-	background-color: #f6f5f7;
+	/* background-color: #f6f5f7; */
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 50px;
 }
@@ -505,13 +505,9 @@ footer a {
 
 .linea-footer {
   border-top: solid 2px  #00142D;
+  background-color: transparent;
   margin: 35px 0px;
-}
-
-.imagen-logo {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
+  width: 1000px;
 }
 
 .pie-pagina-botones {
@@ -552,4 +548,61 @@ p {
   line-height: 2rem;
   color: #202542;
   font-style: 'Plus Jakarta Sans';
+}
+
+@media (max-width : 415px)  {
+  .logo, .imagen-frente {
+    display: none;
+  }
+  .barra-navegacion {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .titulo-miembros {
+    font-size: 2em;
+  }
+
+  .subtitulo-miembros {
+    font-size: 1.5em;
+  }
+
+  .miembros {
+    /* display: grid; */
+  }
+
+  .cards-img {
+    display: grid;
+    flex-direction: row;
+  }
+
+  .title-name-img {
+    font-size: 1.4em;
+  }
+
+  .pie-pagina {
+    display: grid;
+  }
+
+  .imagen-logo {}
+
+  .imagen-logo-footer {
+    width: 380px;
+  }
+
+  .copyright {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    color:  #00142D;
+    font-size: 10px;
+  }
+
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
 }
